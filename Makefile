@@ -1,5 +1,5 @@
 
-NAME	=	computorv1
+NAME	=	computor
 
 INC_DIR	=	./incs
 OBJ_DIR	=   ./objs
