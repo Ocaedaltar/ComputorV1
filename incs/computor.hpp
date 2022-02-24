@@ -6,7 +6,7 @@
 /*   By: mlormois <mlormois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 04:02:45 by mlormois          #+#    #+#             */
-/*   Updated: 2022/02/24 02:00:28 by mlormois         ###   ########.fr       */
+/*   Updated: 2022/02/24 04:49:49 by mlormois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@
 # include <vector>
 # include <iterator>
 
-# define ABS(x) ( x < 0 ? -x : x )
 # define MSG( str ) std::cout << "MSG: " << str << std::endl; 
 # define ERR_DEG "The polynomial degree is stricly greater than 2, I can't solve."
 

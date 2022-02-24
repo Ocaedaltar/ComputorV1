@@ -6,7 +6,7 @@
 /*   By: mlormois <mlormois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 09:11:20 by mlormois          #+#    #+#             */
-/*   Updated: 2022/02/24 04:06:35 by mlormois         ###   ########.fr       */
+/*   Updated: 2022/02/24 05:21:17 by mlormois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include "Number.hpp"
 # include <iostream>
 # include <vector>
-# include <cmath>
 
+# define ABS(x) ( x < 0 ? -x : x )
 # define SOL_ALL "All real numbers are solutions."
 # define SOL_ERR "No possible solution."
 
@@ -30,6 +30,7 @@ private:
 
 	int degres;
 
+	double	ft_sqrt( double v ) const;
 	void	solution_two( void ) const;
 	void	solution_one( void ) const;
 	void	solution_zero( void ) const;
