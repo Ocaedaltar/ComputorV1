@@ -6,7 +6,7 @@
 /*   By: mlormois <mlormois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 04:13:27 by mlormois          #+#    #+#             */
-/*   Updated: 2022/02/23 09:16:53 by mlormois         ###   ########.fr       */
+/*   Updated: 2022/02/24 01:36:06 by mlormois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,8 @@ std::vector< Number > ft_createList( std::vector< Token > token )
 		if (it->getType() == VAL)
 		{
 			sign = 1 * ((!balancing && sign) || (balancing && !sign));
-			nums.push_back( Number( std::stoi((it + 1)->getStr()), sign , std::stod(it->getStr())));
+			if (std::stod(it->getStr()) != 0)
+				nums.push_back( Number( std::stoi((it + 1)->getStr()), sign , std::stod(it->getStr())));
 			sign = 0;
 		}
 	}
