@@ -6,7 +6,7 @@
 /*   By: mlormois <mlormois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 04:01:41 by mlormois          #+#    #+#             */
-/*   Updated: 2022/02/24 03:23:38 by mlormois         ###   ########.fr       */
+/*   Updated: 2022/02/24 05:37:19 by mlormois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void ft_reduce_form( std::vector< Number > list )
 		std::cout << "= 0" << std::endl;
 	}
 	else 
-		std::cout << "0";
+		std::cout << "0" << std::endl;
 }
 
 // Print the polynomial degree of the arguments!

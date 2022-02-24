@@ -6,7 +6,7 @@
 /*   By: mlormois <mlormois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 04:03:11 by mlormois          #+#    #+#             */
-/*   Updated: 2022/02/23 09:21:38 by mlormois         ###   ########.fr       */
+/*   Updated: 2022/02/24 05:35:25 by mlormois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ private:
     double  value;
 
 public:
-    Number( void );
-    Number( int power, int sign, double value );
+	Number( void );
+	Number( int power, int sign, double value );
 	Number( Number const & cpy );
 	Number &operator=( Number const & other );
-    ~Number( void );
+	~Number( void );
 
 	int const &getPower( void ) const;
 	int const &getSign( void ) const;
